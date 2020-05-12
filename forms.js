@@ -27,6 +27,9 @@ app.get("/get-display",function(req,res){
 
 app.post("/post-display",function(req,res){
     var dataArray = [];
+    for (var i in req.query){
+        dataArray.push({"name":i, "value":req.query[i]})
+    }
     for (var i in req.body){
         dataArray.push({"name":i, "value":req.body[i]})
     }
