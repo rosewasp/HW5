@@ -1,0 +1,18 @@
+<h1>GET request received</h1>
+<table>
+    <caption>Submitted Name and Value Pairs.</caption>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each dataList}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.value}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
