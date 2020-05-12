@@ -1,8 +1,11 @@
+<!-- handles /get-display route, used to display GET data -->
 <h1>GET request received</h1>
 <table>
     <tbody>
+        <!-- iterate through each element in dataList -->
         {{#each dataList}}
             <tr>
+                <!-- each element gets a new row in table -->
                 <td>{{this.name}}</td>
                 <td>{{this.value}}</td>
             </tr>

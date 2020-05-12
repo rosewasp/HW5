@@ -1,8 +1,11 @@
+<!-- handles /post-display route, used to display POST data -->
 <h1>POST request received</h1>
 <table>
     <tbody>
+        <!-- iterate through each element in dataList -->
         {{#each dataList}}
             <tr>
+                <!-- each element in dataList gets a new row -->
                 <td>{{this.name}}</td>
                 <td>{{this.value}}</td>
             </tr>
