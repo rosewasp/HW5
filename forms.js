@@ -40,9 +40,10 @@ app.get("/get-display",function(req,res){
 // iterates through each key:value in query and body of POST data
 app.post("/post-display",function(req,res){
     var dataArray = [];
-    /*for (var i in req.query){
+    // iterates through query of POST data
+    for (var i in req.query){
         dataArray.push({"name":i, "value":req.query[i]})
-    }*/
+    }
     for (var i in req.body){
         dataArray.push({"name":i, "value":req.body[i]})
     }
